@@ -1,1 +1,92 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashu | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; }
+    header { background: #2b6cb0; color: white; padding: 2rem 1rem; text-align: center; }
+    nav { background: #1a4f8a; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; padding: 1rem; }
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2rem; }
+    h2 { margin-bottom: 0.5rem; color: #2b6cb0; }
+    footer { background: #222; color: white; text-align: center; padding: 1rem; }
+
+    .profile {
+      width: 120px; height: 120px; border-radius: 50%;
+      object-fit: cover; margin-top: 1rem; border: 3px solid white;
+    }
+
+    .gallery { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+    .gallery img {
+      flex: 1 1 200px;
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #2b6cb0;
+      filter: grayscale(60%);
+      transition: transform 0.3s, filter 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+    .gallery img:hover {
+      transform: translateY(-8px) scale(1.05);
+      filter: grayscale(0%) saturate(1.3);
+      border-color: #ed8936;
+      box-shadow: 0 10px 20px rgba(237, 137, 54, 0.5);
+    }
+    .gallery img:nth-child(2):hover { border-color: #48bb78; box-shadow: 0 10px 20px rgba(72, 187, 120, 0.5); }
+    .gallery img:nth-child(3):hover { border-color: #9f7aea; box-shadow: 0 10px 20px rgba(159, 122, 234, 0.5); }
+
+    @media (max-width: 600px) {
+      nav ul { flex-direction: column; align-items: center; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yashu</h1>
+    <p>Aspiring Full Stack Web Developer</p>
+    <img src="profile.jpg" alt="Photo of Yashu" class="profile">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a developer trainee from Tenali, Guntur district. I am a passionate learner building my front end and back end skills.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>My responsive portfolio page, styled with HTML and CSS.</p>
+      <div class="gallery">
+        <img src="project1.jpg" alt="Portfolio page screenshot">
+        <img src="project2.jpg" alt="Crochet work">
+        <img src="project3.jpg" alt="Practice project">
+      </div>
+    </section>
+
+    <section id="7702802202">
+      <h2>Contact</h2>
+      <p>Email: chamarthiyasaswini1@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Yashu</p>
+  </footer>
+</body>
+          </html>
